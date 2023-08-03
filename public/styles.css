@@ -5,6 +5,7 @@ html{
 
 header {
     display: flex;
+    align-items: center;
     margin-top: 10px;
     margin-bottom: 60px;
     justify-content: center;
@@ -51,3 +52,57 @@ body{
     width: 200px;
     height: 200px;
 }
+
+
+.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+}
+
+.dark-mode .barbie {
+border-color: #ff00ff; 
+}
+  
+.dark-mode .ken {
+border-color: #0000ff; 
+}
+
+.dark-mode-bt {
+    background-color: #333333;
+    color: #ffffff;
+    border: solid 1px #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+
+a {
+    color: #007bff; 
+    text-decoration: none; 
+  }
+  
+
+  .dark-mode a {
+    color: #4dc2ff; 
+  }
+  
+  a:visited {
+    color: #8800ff; 
+  }
+  
+  .dark-mode a:visited {
+    color: #cc66ff; 
+  }
+  
+  a:hover,
+  a:focus {
+    color: #0056b3; 
+  }
+  
+  .dark-mode a:hover,
+  .dark-mode a:focus {
+    color: #33aaff; 
+  }
+  

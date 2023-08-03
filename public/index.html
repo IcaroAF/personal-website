@@ -12,6 +12,8 @@
     <body>
         <header>
             <a href="./en-index.html">English Version</a>
+            <button class="dark-mode-bt" id="dark-mode-toggle">Modo Escuro</button>
+
         </header>
         <div class="content">
             <div>Olá, eu sou o Ícaro, um desenvolvedor back-end (Até ontem sabia front)</div>
@@ -21,5 +23,37 @@
             <img class="gif" src="https://media.tenor.com/QWai-afTJb4AAAAC/graphic-design-is-my-passion-designer.gif" alt="gif-graphic-design-is-my-passion">
             <div class="ken">Ele é só uma div.</div>
         </div>
+        <script>
+          
+          function toggleDarkMode() {
+              const body = document.querySelector('body');
+              body.classList.toggle('dark-mode');
+
+              
+              const isDarkMode = body.classList.contains('dark-mode');
+              localStorage.setItem('darkMode', isDarkMode);
+
+              
+              const darkModeToggle = document.getElementById('dark-mode-toggle');
+              darkModeToggle.innerText = isDarkMode ? 'Modo Claro' : 'Modo Escuro';
+          }
+
+              
+              const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+              
+              if (isDarkMode) {
+                  const body = document.querySelector('body');
+                  body.classList.add('dark-mode');
+
+                  const darkModeToggle = document.getElementById('dark-mode-toggle');
+                  darkModeToggle.innerText = 'Modo Claro';
+              }
+              
+              const darkModeToggle = document.getElementById('dark-mode-toggle');
+              darkModeToggle.addEventListener('click', toggleDarkMode);
+
+          
+        </script>
     </body>
 </html>
