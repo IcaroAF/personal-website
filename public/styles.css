@@ -37,6 +37,9 @@ body{
 }
 
 .ken {
-    margin: 100px 500px 50px 0px;
+    margin: 100px 250px 50px 0px;
     border: solid 1px blue;
+    display: flex;
+    width: 100px;
+    height: 40px;
 }
